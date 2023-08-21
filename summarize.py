@@ -8,7 +8,7 @@ CONTEXT = 4096 # 4k context length
 TOKEN_CHARACTER_RATIO = 2
 MAX_CHUNK_LENGTH = int(CONTEXT * TOKEN_CHARACTER_RATIO) - 200
 MODEL_NAME = "./models/llama-2-13b-chat.ggmlv3.q4_K_S.bin"
-LLAMA_PROMPT_TEMPLATE = """SYSTEM: You create summaries of business meeting transcript between Tom from Grafana Labs and a customer. Only respond in bulleted lines, in the line format: "* (Speaker Name) key points."
+LLAMA_PROMPT_TEMPLATE = """SYSTEM: You create summaries of business meeting transcript. Only respond in bulleted lines, in the line format: "* (Speaker Name) key points."
 USER: INSERT_PROMPT_HERE
 ASSISTANT:"""
 
