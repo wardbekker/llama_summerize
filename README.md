@@ -13,8 +13,12 @@ This example shows how LLAMA can be used to summarize gong call transcripts
 
 ## Example
 
+Go to any Gong call, click on the transcript tab, and save the HTML file. Then run the following command:
+
 ```
 python summarize.py gong-transcript.html "Ward" summary.txt
 ```
 
 (Main) Speaker name is used for semi-intelligent chunking of the text. 
+
+After a coffee or two this will result in a new text file 'summary.txt' with the summary of the call. At the bottom of the file you will have a total summary of the call, and above that you will have a summary of each chunk of the call.
