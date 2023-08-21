@@ -3,7 +3,6 @@ import html2markdown
 import re
 from llama_cpp import Llama
 
-
 CONTEXT = 4096 # 4k context length
 TOKEN_CHARACTER_RATIO = 2
 MAX_CHUNK_LENGTH = int(CONTEXT * TOKEN_CHARACTER_RATIO) - 200
@@ -90,7 +89,7 @@ def summerize_chunks(chunks, target_file):
     # write summarisations to a text file
     with open(target_file, "w") as f:
         # add header with name of transcript file
-        f.write(f"\n\nSummarisations of {transcript_file}\n\n")
+        f.write(f"\n\nSummarisations of {target_file}\n\n")
         
         for i, sum in enumerate(summarisations):
             f.write(sum)
