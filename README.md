@@ -12,5 +12,5 @@ This example shows how LLAMA can be used to summarize gong call transcripts
 ## Example
 
 ```
-python summarize.py gong-transcript.html "John Doe" summary.txt
+python summarize.py gong-transcript.html "Ward" summary.txt
 ```
